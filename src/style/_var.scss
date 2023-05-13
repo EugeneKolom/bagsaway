@@ -1,0 +1,47 @@
+//Colors
+$colorBlue: #3494EB;
+$colorBlueLight: #A6D3FC;
+$colorOrange: #F29E00;
+$colorGreen: #70B943;
+$colorWhite: #ffffff;
+$colorGrey: #777E90;
+$colorGreyLight: rgba(84, 83, 83, 0.6);
+$colorBlack: #141514;
+$colorGreyBg: rgba(0, 0, 0, 0.03);
+
+//Fonts
+@mixin font($family: 'Poppins', $weight:500, $size:14px, $lineHeight:16px) {
+    font-family: $family;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineHeight;
+}
+
+//Media queries
+$tablet:768px;
+$mobile:376px;
+$laptop:1024px;
+
+//Another
+@mixin flex($justify:space-between, $align:center, $direction:row){
+display: flex;
+flex-direction: $direction;
+justify-content: $justify;
+align-items: $align;
+}
+
+@mixin position($top:0, $left:0, $bot:null, $right:null, $wid:10px, $hei:10px){
+    position: absolute;
+    content: '';
+    top: $top;
+    left: $left;
+    bottom: $bot;
+    right: $right;
+    width: $wid;
+    height: $hei;
+}
+
+
+
+

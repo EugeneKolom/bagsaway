@@ -1,0 +1,121 @@
+.why-store {
+    margin-top: 130px;
+    @media(max-width:$mobile){
+        margin-top: 65px;
+    }
+    .wrapper {
+        max-width: 1440px;
+        @media(max-width:$mobile){
+            max-width: 378px;
+        }
+    }
+    .why-store__title {
+        @media(max-width:$mobile){
+            margin: 0 auto;
+            width: 249px;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 150%;
+        }
+    }
+    .title {
+    }
+    .why-store__subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 15px;
+        @media(max-width:$mobile){
+            margin: 0 auto;
+            width: 250px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+        }
+    }
+    .subtitle {
+    }
+    .map2 {
+        width: 1261px;
+        background: url(./img/why_store/halfmap.svg);
+        @media(max-width:$mobile) {
+            width: 378px;
+        }
+    }
+    .why-store-block {
+        margin-top: 51px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 269px;
+        @media(max-width:$mobile){
+            flex-direction: column;
+            gap: 60px;
+        }
+    }
+    .why-store-column {
+    }
+
+    .why-store-column_left {
+        width: 342px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px;
+        @media(max-width:$mobile){
+            order: 1;
+            margin: 0 auto;
+            width: 308px;
+        }
+    }
+
+    .why-store-column_right{
+            @media(max-width:$mobile){
+                order: 0;
+                margin: 0 auto;
+            }
+    }
+
+    .why-store-column_right img{
+        height: 700px;
+        @media(max-width: $mobile){
+            height: 369px;
+        }
+    }
+    .why-store-stroke {
+    }
+    .label {
+        color: $colorWhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 43px;
+        height: 24px;
+        border-radius: 100px;
+    }
+    .label_green {
+        background: $colorGreen center center;
+    }
+    .title-advantages {
+        margin-top: 28px;
+        margin-bottom: 18px;
+        font-weight: 500;
+        font-size: 24px;
+        color: $colorBlue;
+    }
+    .descr-advantages {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        @media(max-width: $mobile){
+            width: 301px;
+        }
+    }
+    .label_orange {
+        background: $colorOrange;
+    }
+    .how-works-flex {
+    }
+    .how-works__item {
+    }
+}
+
+

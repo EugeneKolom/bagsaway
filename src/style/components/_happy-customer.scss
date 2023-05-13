@@ -1,0 +1,142 @@
+.happy_customer {
+    margin-top: 173px;
+    .wrapper {
+        max-width: 1380px;
+    }
+    .title {
+    }
+    .happy_customer {
+        @media (max-width:$mobile) {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    .happy_customer-subtitle {
+        margin-top: 35px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 30px;
+        @media (max-width:$mobile) {
+            margin: 15px auto 0;
+            width: 256px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+    .gallery-flex {
+        margin-top: 68px;
+        @include flex;
+        gap: 20px;
+        @media (max-width:$mobile) {
+        margin-top: 20px;
+        }
+        
+    }
+    .gallery-item {
+        height: 240px;
+        width: 440px;
+        background: $colorGreyBg;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        @media (max-width:$mobile) {
+            margin: 0 auto;
+            height: 280px;
+        width: 280px;
+        }
+    }
+
+
+    .gallery-item:not(:first-child) {
+        @media (max-width:$mobile) {
+        display: none;
+        }
+    }
+    .avatar {
+    }
+    .nickname {
+        text-align: center;
+        width: 130px;
+        padding-left: 34px;
+        color: $colorBlack;
+        margin: 13px auto 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        position: relative;
+    }
+
+    .nickname::after {
+        @include position;
+        top: -10px;
+        width: 32px;
+        height: 32px;
+        background: url(./img/happy_customer/trustpilot_logo.svg) no-repeat;
+    }
+    .comment {
+        width: 392px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        @media (max-width:$mobile) {
+            width: 260px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+        }
+    }
+    .name {
+        display: block;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #141514;
+        @media (max-width:$mobile) {
+        margin-top: 10px;
+        }
+    }
+
+    .slider__control {
+        @media (max-width:$mobile) {
+            margin: 20px auto 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 21px;
+        }
+    }
+    .arrow_left {
+        @media (max-width:$mobile) {
+        width: 14px;
+        height: 9px;
+        background: url(./img/never_worry/arrow_left.svg) no-repeat;
+        }
+    }
+    .arrow:hover {
+        @media (max-width:$mobile) {
+        cursor: pointer;
+        }
+    }
+    .arrow_right {
+        @media (max-width:$mobile) {
+        border: 1px $colorBlueLight solid;
+        border-radius: 50%;
+        transform: rotate(180deg);
+        width: 40px;
+        height: 40px;
+        background: url(./img/never_worry/arrow_left.svg) no-repeat center center;
+        }
+    }
+}

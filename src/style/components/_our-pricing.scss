@@ -1,0 +1,288 @@
+.our-pricing {
+    margin-top: 193px;
+    @media (max-width:$mobile) {
+    margin-top: 65px;
+    }
+    .wrapper {
+        max-width: 1440px;
+    }
+    .block-img {
+        display: flex;
+        align-items: center;
+        height: 560px;
+        background: url(./img/our_pricing/ourpr.jpg) no-repeat left;
+        @media(max-width: $mobile){
+            background: url(./img/our_pricing/ourpr_mob.jpg) no-repeat left;
+        }
+    }
+
+
+    .our-pricing-form {
+        margin-left: 571px;
+        width: 779px;
+        height: 400px;
+        background: rgb(218,215,215);
+        background: linear-gradient(70deg, rgb(226, 225, 225) 0%, rgba(255,255,255,1) 100%);
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 40px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(100px);
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        @media(max-width: $mobile){
+            width: 316px;
+            margin: 460px auto 0;
+            height: 435px;
+            background: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(255, 255, 255, 0.8);
+box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(100px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 24px;
+        }
+    }
+
+    .search-full__stroke{
+        width: 699px;
+        height: 60px;
+        background: $colorWhite;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 50px;
+        form{
+            height: 100%;
+        }
+        @media(max-width:$mobile){
+            width: 267px;
+        height: 150px;
+        margin-top: 25px;
+        border-radius: 20px;
+        }
+    }
+
+    .form-flex {
+        height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+@media(max-width:$mobile){
+    flex-direction: column;
+}
+    }
+
+    .form-block {
+        margin: 0 auto;
+        width: 700px;
+        height: 100%;
+        @media(max-width:$mobile){
+            width: 267px;
+        }
+    }
+
+    .form-block_right {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        @media (max-width:$mobile) {
+        justify-content: center;
+        gap: 26px;
+        }
+    }
+
+    .form-block_right::before{
+        content: "";        
+        position: absolute;
+        left: 0;
+        top: 20%;
+        width: 1px;
+        height: 40px;
+        background: $colorGreyLight;
+        @media (max-width:$mobile) {
+        display: none;
+        }
+    }
+
+    .check-luggage__line {
+        height: 15px;
+        padding-right: 15px;
+    }
+
+    .our-pricing_form input{
+    }
+
+
+    .our-pricing-title {
+        text-align: left;
+        margin-top: 64px;
+        @media(max-width: $mobile){
+            margin-top: 20px;
+
+            text-align: left;
+            font-weight: 500;
+            font-size: 30px;
+        }
+    }
+    .title {
+    }
+    .descr-enter {
+        margin-top: 28px;
+        margin-bottom: 32px;
+        font-weight: 400;
+font-size: 14px;
+width: 362px;
+@media(max-width: $mobile){
+    margin: 0 auto;
+    font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+    width: 267px;
+}
+    }
+    .search-city {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 24px;
+        @media(max-width: $mobile){
+            margin-left: 18px;
+        }
+    }
+    .ico {
+    }
+    .ico_search {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        background: url(./img/our_pricing/search.svg) no-repeat;
+        @media(max-width: $mobile){
+            width: 24px;
+            height: 20px;
+            background: url(./img/our_pricing/geo.svg) no-repeat;   
+        }
+    }
+
+    .search-city textarea{
+        display: none;
+        @media(max-width: $mobile){
+            margin-left: 10px;
+            display: block;
+            border: none;
+            font-family: 'Poppins';
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    .search-city input {
+        margin-left: 15px;
+        width: 254px;
+        @media(max-width: $mobile){
+            display: none;
+        }
+    }
+
+    .check-luggage {
+        display: flex;
+        align-items: center;
+        height: 25px;
+        padding-left: 52px;
+        position: relative;
+        margin-right: 23px;
+        margin-left: 30px;
+        input[value='1']{
+            color: $colorBlue;
+            @media (max-width:$mobile) {
+            color: $colorBlack;
+            font-size: 16px;
+            }
+        }
+        @media (max-width:$mobile) {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 45px;
+        }
+    }
+
+    .check-luggage::before{
+        position: absolute;
+        content: '';
+        left: 18px;
+        width: 24px;
+        height: 24px;
+        background: url(./img/store/icon_suitcase.svg);
+        @media (max-width:$mobile) {
+            background: url(./img/our_pricing/bag.svg);
+            left: 7px;
+        }
+    }
+
+    .check-luggage__minus {
+        width: 14px;
+        height: 2px;
+        background: $colorGreyLight;
+    }
+
+    .check-luggage input{
+        margin: 0 10px 0 10px;
+width: 10px;
+    }
+
+
+    .check-luggage__plus {
+        height: 14px;
+        width: 14px;
+        background: url(./img/our_pricing/plus.svg);
+    }
+
+    .btn_search-full {
+        width: 154px;
+        height: 50px;
+        margin-right: 7px;
+        @media (max-width: $mobile){
+            width:119px;
+            height: 44px;
+            margin-right: 6px;
+            text-indent: 130%;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+
+        }
+    }
+    @media (max-width: $mobile){
+    .btn_search-full::before{
+        color: $colorWhite;
+        position: absolute;
+        content:"Calculate";
+        left: -15px;
+        top: 48%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 16px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    }
+    .descr-min {
+        margin-top: 32px;
+        font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+        color: $colorBlue;
+        b {
+            font-weight: 700;
+        }
+        @media (max-width:$mobile) {
+            margin-top: 25px;
+        width: 214px;
+        font-size: 18px;
+        letter-spacing: -0.02em;
+        }
+    }
+}

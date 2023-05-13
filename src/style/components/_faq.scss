@@ -1,0 +1,122 @@
+.faq {
+    margin-top: 144px;
+    @media (max-width:$mobile) {
+    margin-top: 70px;
+    }
+    .sections {
+    }
+    .wrapper {
+        max-width: 934px;
+    }
+    .faq__title {
+    }
+    .title {
+        @media (max-width:$mobile) {
+            color: $colorBlack;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+    .faq__subtitle {
+        font-family: 'Inter';
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+        margin: 16px auto 0;
+        width: 516px;
+        @media (max-width:$mobile) {
+        width: 340px;
+        font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+color: $colorBlack;
+        }
+    }
+    .subtitle {
+    }
+    .faq-block {
+        margin-top: 32px;
+    }
+    .faq-item {
+        padding: 24px;
+        border-bottom: 1px solid #E5E5E5;
+        border-radius: 1px;
+        position: relative;
+    }
+
+    .faq-item_open.faq-item span{
+        display: none;
+    }
+
+    .faq-item_open {
+        margin-top: 10px;
+        padding-right: 34px;
+        position: relative;
+        background: rgba(52, 148, 235, 0.07);
+        border-radius: 12px;
+        border: none;
+    }
+
+    .faq-item_open::after {
+        position: absolute;
+        content: '';
+        right: 24px;
+        top: 20%;
+        width: 21px;
+        height: 21px;
+        background: url(./img/faq/chevron.svg) no-repeat;
+        transform: rotate(180deg);
+    }
+    .question {
+        font-weight: 700;
+font-size: 18px;
+color: $colorBlack;
+
+
+    }
+
+    .faq-item .question {
+        @media (max-width:$mobile) {
+            display: none;
+            }
+    }
+
+    .faq-item:last-child {
+        display: none;
+        @media (max-width:$mobile) {
+            display: block;
+            border-bottom: #e7e7e7 1px solid;
+            }
+    }
+
+    .question_mob {
+        display: none;
+        @media (max-width:$mobile) {
+            color:$colorBlack;
+        display: inline-block;
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+        }
+    }
+    .angle {
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        width: 21px;
+        height: 21px;
+        background: url(./img/faq/chevron.svg) no-repeat;
+    }
+    .descr {
+        margin-top: 10px;
+        @media (max-width:$mobile) {
+        width: 292px;
+        font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.header {
+    .burger-menu{
+        display: none;
+        span {
+            background: $colorBlue;
+            width: 22px;
+            height: 3px;
+            border-radius: 3px;
+        }
+        span:nth-child(2){
+            width: 29px;
+        }
+        @media (max-width:$mobile){
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+    }
+    }
+
+
+    .wrapper {
+        max-width: 1120px;
+        @media (max-width:$mobile){
+                max-width: 322px;
+        }
+            
+        .header-flex {
+            @include flex;
+            padding: 20px 0 20px;
+
+            .links-block {
+                @include flex;
+                font-family: 'DM Sans';
+                gap: 30px;
+                .navigation {
+                    @include flex;
+                    gap: 24px;
+                }
+                .header__links {
+                    @include flex;
+                    gap: 24px;
+                    @media (max-width:$mobile){
+                        display: none;
+                    }
+                }
+                
+                .header__link_partner {
+                    color: $colorBlue;
+                    padding: 16px;
+                    border: 2px solid $colorBlueLight;
+                    border-radius: 90px;
+                }
+                
+                .header__navigation {
+                    @media (max-width:$mobile){
+                        display: none;
+                    }
+                }
+                
+                .navigation__item {
+                }
+                
+                .header__link {
+                }
+            }
+        }
+        
+       
+            
+    }
+}
+
+
+
+.header__link_lang {
+    padding-left: 28px;
+    position: relative;
+    &::before {
+        @include position($wid:16px, $hei:16px);
+        background: url(./img/header/globus.svg) no-repeat;
+    }
+   
+}
+

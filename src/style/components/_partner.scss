@@ -1,0 +1,109 @@
+.partner {
+    margin-top: 58px;
+    background: $colorGreyBg;
+    padding-top: 76px;
+    height: 730px;
+    @media (max-width:$mobile) {
+        padding-top: 45px;
+        height: 980px;
+    }
+    .sections {
+    }
+    .wrapper {
+        max-width: 996px;
+        @media (max-width:$mobile) {
+        max-width: 327px;
+        }
+    }
+    .partner__title {
+    }
+    .title {
+        @media (max-width:$mobile) {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 48px;
+            letter-spacing: -0.04em;
+        }
+    }
+    .partner__subtitle {
+        margin: 24px auto 40px;
+        text-align: center;
+        width: 327px;
+    }
+    .subtitle {
+    }
+    .gallery-flex {
+        display: flex;
+        gap: 21px;
+        @media (max-width:$mobile) {
+        flex-direction: column;
+        }
+    }
+    .gallery-item {
+        width: 489px;
+        height: 468px;
+        background: $colorWhite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $colorWhite;
+        border-radius: 8px;
+        @media (max-width:$mobile) {
+        width: 316px;
+        height: 376px;
+        }
+    }
+    .partner__block:first-child {
+        @media (max-width:$mobile) {
+            .image {
+                width: 273px;
+                height: 159px;
+                background: url(./img/parter_with/partner1_mob.jpg)center no-repeat;
+                border-radius: 10px;
+            }
+        }
+    }
+    .partner__block:last-child {
+        @media (max-width:$mobile) {
+            .image {
+                width: 273px;
+                height: 159px;
+                background: url(./img/parter_with/partner2_mob.jpg)center no-repeat;
+                border-radius: 10px;
+            }
+        }
+    }
+    .image {
+        margin-top: 29px;
+        margin-bottom: 14px;
+        img {
+            @media (max-width:$mobile) {
+                    display: none;
+                }
+        }
+    }
+    .names {
+        color: $colorBlack;
+        font-weight: 500;
+font-size: 16px;
+@media (max-width:$mobile) {
+color: $colorBlue;
+}
+    }
+    .describe {
+        margin-top: 8px;
+        margin-bottom: 24px;
+        width: 422px;
+        font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+text-align: center;
+@media (max-width:$mobile) {
+width: 223px;
+}
+    }
+    .gallery-flex_btn {
+        margin-bottom: 36px;
+    }
+}

@@ -1,0 +1,111 @@
+.top-destination {
+    background: $colorGreyBg;
+    margin-top: 128px;
+    padding-top: 71px;
+    height: 801px;
+    @media (max-width:$mobile) {
+    margin-top: 250px;
+    padding-top: 41px;
+    height: 1413px;
+    }
+    .wrapper {
+        max-width: 1285px;
+    }
+    .top-destination__title {
+        @media (max-width:$mobile) {
+            font-weight: 500;
+            font-size: 30px;
+        }
+    }
+    .title {
+    }
+    .top-destination__subtitle {
+        margin-top: 24px;
+        text-align: center;
+        font-weight: 400;
+font-size: 14px;
+@media (max-width:$mobile) {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+    }
+    .gallery-flex {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 45px;
+        @media (max-width:$mobile) {
+            gap: 15px;
+        }
+
+    }
+    .gallery-item {
+        position: relative;
+        height: 259px;
+    }
+
+    .gallery-item {
+        @media (max-width:$mobile) {
+            width: 221px;
+            height: 119px;
+            img, h6 {
+                display: none;
+            }
+        }
+    }
+
+    .gallery-item:nth-child(1) {
+        order:0;
+        background: url(./img/top_dest/new_york_mob.jpg) center no-repeat;
+    }
+    .gallery-item:nth-child(2) {
+        order:2;
+        background: url(./img/top_dest/london_mob.jpg) center no-repeat;
+    }
+    .gallery-item:nth-child(3) {
+        order:4;
+        background: url(./img/top_dest/los_angeles_mob.jpg) center no-repeat;
+    }
+    .gallery-item:nth-child(4) {
+        order:6;
+        background: url(./img/top_dest/miami_mob.jpg) center no-repeat;
+    }
+    .gallery-item:nth-child(5) {
+        order:8;
+        background: url(./img/top_dest/montreal_mob.jpg) center no-repeat;
+    }
+    .gallery-item:nth-child(6) {
+        order:1;
+        background: url(./img/top_dest/quebec_mob.jpg) center no-repeat;
+    }
+    .gallery-item:nth-child(7) {
+order:3;
+background: url(./img/top_dest/san_francisco_mob.jpg) center no-repeat;
+    }
+    .gallery-item:nth-child(8) {
+        order:5;
+        background: url(./img/top_dest/san_huan_mob.jpg) center no-repeat;
+    }
+    .gallery-item:nth-child(9) {
+        order:7;
+        background: url(./img/top_dest/seatle_mob.jpg)center no-repeat;
+    }
+
+    .gallery-item:nth-last-child(-n+4){
+margin-top: 8px;
+    }
+
+    .gallery-item__title{
+        color: $colorWhite;
+        position: absolute;
+        top:82%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 600;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
